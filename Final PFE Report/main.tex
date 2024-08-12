@@ -1,0 +1,42 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{longtable}
+\doublespacing
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage[options]{multirow}
+
+\titleformat{\chapter}[block]
+  {\normalfont\Huge\bfseries\centering}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+  [\titlerule]
+
+
+\title{End of Studies Project}
+\author{Mohamed Dhia Ben Amar}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\input{Sections/dedication}
+\input{Sections/acknowledgments}
+\input{Sections/preface}
+\input{Sections/contents}
+\listoftables
+\listoffigures
+
+\pagenumbering{arabic}
+\input{Sections/generalIntroduction}
+\input{Chapters/chapter1}
+
+\end{document}

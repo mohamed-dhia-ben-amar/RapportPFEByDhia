@@ -39,3 +39,8 @@
 *.tdo
 *.vrb
 *.xdy
+
+# My images folder
+Images/
+*.png
+*.jpeg

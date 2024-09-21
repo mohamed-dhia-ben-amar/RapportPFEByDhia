@@ -1,5 +1,7 @@
 \chapter{Realization - Web Features}
-
+\setcounter{minitocdepth}{1}
+\minitoc
+\newpage
 \section{Introduction}
 In this chapter, we will be discussing the two web-related sprints. We will provide a detailed explanation of the conception part, including a class diagram and a sequence diagram. Additionally, we will present the sprint backlog and include relevant screenshots of these sprints. Furthermore, we will showcase some code snippets to illustrate the implementation process.
 
@@ -221,10 +223,6 @@ The database schema for the upsell/cross-sell feature is shown in Figure \ref{fi
 \end{figure}
 
 The class diagram illustrates the relationships between two main classes: \texttt{Upsell} and \texttt{Product}.
-%The class diagram showcases the relationship between the Product and Upsell classes. Each Product can have an associated Upsell, and each Upsell can include multiple Products. The Product class contains a reference to an Upsell, while the Upsell class maintains a list of Products. This relationship is depicted as follows:  
-%A Product "has upsell" with a cardinality of "0..*" to "1".
-%An Upsell "includes products" with a cardinality of "0.." to "0..".
-%The Upsell class also includes additional attributes such as status, offer, priority, type, html, store, and isDeleted. The Offer class, which is part of the Upsell class, contains attributes like product, quantity, and price.
 
 \begin{itemize}
     \item \textbf{Upsell Class:} Represents an upsell with attributes such as an ID (\texttt{\_id}), status, offer, priority, type, HTML, store, and isDeleted. The \texttt{Offer} is a composite object with different attributes like product, quantity, and price.

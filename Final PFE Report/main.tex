@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass{report}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -18,34 +18,70 @@
 \usepackage{amsmath}
 \usepackage{tikz-uml}
 \usepackage{listings}
+\usepackage{enumitem}
+\usepackage{minitoc}
+\dominitoc
+\usepackage{fancyhdr}
+\usepackage{lipsum} % For dummy text
+
+% Configure the fancyhdr package
+\fancyhf{} % Clear all header and footer fields
+
+% Define the header and footer
+\fancyhead[L]{\leftmark} % Left side of the header contains the chapter title
+\fancyfoot[C]{\thepage} % Center of the footer contains the page number
+
+% Ensure that the header and footer are applied to chapter pages
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
 
 \titleformat{\chapter}[block]
   {\normalfont\Huge\bfseries\centering}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
   [\titlerule]
-
 
 \title{End of Studies Project}
 \author{Mohamed Dhia Ben Amar}
 
 \begin{document}
 
+\newlist{abbrv}{itemize}{1}
+\setlist[abbrv,1]{label=,labelwidth=1in,align=parleft,itemsep=0.1\baselineskip,leftmargin=!}
+
 \maketitle
+\thispagestyle{plain} % Ensure the title page has a plain style
 
 \pagenumbering{roman}
 \input{Sections/dedication}
+\thispagestyle{plain} % Ensure the dedication page has a plain style
 \input{Sections/acknowledgments}
+\thispagestyle{plain} % Ensure the acknowledgments page has a plain style
 \input{Sections/preface}
+\thispagestyle{plain} % Ensure the preface page has a plain style
+
+\pagestyle{fancy} % Apply fancyhdr settings from here onwards
+
 \input{Sections/contents}
 \listoftables
 \listoffigures
+\chapter*{List of Abbreviations}
+\begin{abbrv}
+  \item[CRM] Customer Relationship Management
+  \item[CMS] Content Management System
+  \item[SDLC] Software Development Life Cycle
+  \item[COD] Cash on Delivery
+  \item[UI] User Interface
+  \item[API] Application Programming Interface
+  \item[SEO] Search Engine Optimization
+  \item[ODM] Object Data Modeling
+  \item[CRUD] Create, Read, Update, Delete
+\end{abbrv}
 
 \pagenumbering{arabic}
 \input{Sections/generalIntroduction}
 \input{Chapters/chapter1}
 \input{Chapters/chapter2}
 \input{Chapters/chapter3}
-
 \input{Chapters/chapter4}
-
+\input{Chapters/chapter5}
+\input{Sections/perspectives&conclusion.tex}
 
 \end{document}

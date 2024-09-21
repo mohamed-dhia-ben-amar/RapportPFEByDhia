@@ -1,0 +1,465 @@
+\chapter{Realization - Mobile Features}
+\setcounter{minitocdepth}{1}
+\minitoc
+\newpage
+
+\section{Introduction}
+In this chapter, we will be discussing the four mobile-related sprints. We will provide a detailed explanation of the conception part, including a class diagram and a sequence diagram. Additionally, we will present the sprint backlog and include relevant screenshots of these sprints. Furthermore, we will showcase some code snippets to illustrate the implementation process.
+
+\section{Sprint 3: Mobile - Order Management}
+
+\subsection{Sprint Backlog}
+In this section, we present the Sprint Backlog, detailing the tasks planned for developing order management features. It is a concise list of user stories and specific actions that will guide us through the sprint.
+
+\setlength{\LTleft}{0pt}
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Sprint} & \textbf{User Story} & \textbf{Task} & \textbf{ID} \\
+\hline
+3 & 3.1 & Frontend: Create Order Management Screen To View All Orders & 3.0.1 \\
+\hline
+3 & 3.2 & Frontend: Create Order Management Screen To View Order Details & 3.0.2 \\
+\hline
+3 & 3.3 & Frontend: Create Order Management Screen To Update Or Create Orders & 3.0.3 \\
+\hline
+3 & 3.4 & Frontend: Add Filter Chips To Filter Orders & 3.0.4 \\
+\hline
+3 & 3.5 & Frontend: Add Search Bar To Search Orders & 3.0.5 \\
+\hline
+\caption{Sprint 3 - Mobile Order Management}
+\label{tab:sprint3_backlog} 
+\end{longtable}
+
+\subsection{Design \& Implementation}
+
+In this section, we will explore the design and implementation of the mobile ordeer management feature. We will begin by examining the backend design and implementation, followed by an analysis of the frontend design.
+
+\subsubsection{Database Schema}
+
+The database schema for the order management feature is shown in Figure \ref{fig:db_schema_sprint3}. It consists of the following tables:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/sprintThreeClass.png}
+    \caption{Database Schema for Sprint 3}
+    \label{fig:db_schema_sprint3}
+\end{figure}
+
+The class diagram illustrates the relationships between several key classes: \texttt{Order}, \texttt{Customer}, \texttt{CartItem}, \texttt{Product}, \texttt{History}, and \texttt{Total}.
+
+\begin{itemize}
+    \item \textbf{Order Class:} Represents an order with attributes such as an ID (\texttt{\_id}), reference number, customer, cart, status, total, delivery company, history, creation date (\texttt{createdAt}), update date (\texttt{updatedAt}), and refunded status (\texttt{refunded}). The \texttt{Customer} is an object representing the customer associated with the order, and the \texttt{Cart} is a composite object containing \texttt{CartItem} instances.
+
+    \item \textbf{Customer Class:} Represents a customer with attributes like an ID (\texttt{\_id}), name, email, list of order IDs (\texttt{orders}), creation date (\texttt{createdAt}), and update date (\texttt{updatedAt}).
+
+    \item \textbf{CartItem Class:} Represents an item in the cart with attributes for the product, quantity, and price per unit. The \texttt{Product} is an object representing the product associated with the cart item.
+
+    \item \textbf{Product Class:} Represents a product with attributes such as an ID (\texttt{\_id}), name, and price.
+
+    \item \textbf{History Class:} Represents the history of an order with attributes for status and timestamp (\texttt{timestamp}).
+
+    \item \textbf{Total Class:} Represents the pricing details with attributes for the base price (\texttt{basePrice}) and total price (\texttt{totalPrice}).
+
+    \item \textbf{Relationships:}
+    \begin{itemize}
+        \item Each \texttt{Order} is associated with one \texttt{Customer}, represented by a one-to-one relationship.
+        \item Each \texttt{Order} can include multiple \texttt{CartItem} instances, representing a one-to-many relationship between \texttt{Order} and \texttt{CartItem}.
+        \item Each \texttt{Order} can have multiple \texttt{History} entries, representing a one-to-many relationship.
+        \item Each \texttt{Order} is associated with one \texttt{Total}, representing a one-to-one relationship.
+        \item Each \texttt{CartItem} is associated with one \texttt{Product}, representing a one-to-one relationship.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Sequence Diagram}
+
+The sequence diagram in Figure \ref{fig:sequence_sprint3} illustrates the interactions between the frontend and backend components along with keey librairies when exploring the order management feature.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/sprintThreeSequence.png}
+    \caption{Sequence Diagram for Sprint 3}
+    \label{fig:sequence_sprint3}
+\end{figure}
+
+\subsubsection{Zustand - Immer}
+
+\begin{itemize}
+    \item \textbf{Zustand:} Zustand is a small, fast, and scalable state management library for React applications. It provides a simple way to create global state containers that can be shared across components. Zustand is lightweight and efficient, making it ideal for managing state in mobile apps. It supports features like selectors, middleware, and devtools, making it a versatile choice for state management in React applications.
+    \item \textbf{Immer:} Immer is a library that simplifies immutable state updates in JavaScript applications. It allows developers to write code that looks like it mutates state directly, while ensuring immutability behind the scenes. Immer provides a convenient way to update state in a more intuitive and readable manner, making it easier to manage complex state in mobile apps.
+    \item \textbf{Zustand + Immer:} Together, Zustand and Immer provide a powerful combination for managing state in React applications. Zustand simplifies the creation of global state containers, while Immer enhances the immutability of state updates. By using Zustand with Immer, developers can create efficient, scalable, and maintainable state management solutions for mobile apps.
+\end{itemize}
+
+\begin{lstlisting}[language=Python, caption=Zustand + Immer Example, frame=single, framerule=0.5pt]
+import create from 'zustand';
+import produce from 'immer';
+
+const useCounterStore = create((set) => ({
+  counter: 0,
+  increment: () => set(produce((state) => {
+    state.counter += 1;
+  })),
+  decrement: () => set(produce((state) => {
+    state.counter -= 1;
+  })),
+}));
+
+export default useCounterStore;
+\end{lstlisting}
+
+\subsubsection{User Journey}
+
+The user journey for the order management feature is as follows:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/sprintThreeActivity.png}
+    \caption{User Journey for Sprint 3}
+    \label{fig:activity_sprint3}
+\end{figure}
+
+\subsubsection{Screenshots}
+
+The screenshots in Figure \ref{fig:screenshots_sprint3} showcase the order management feature in the mobile app. The first screenshot displays the order management screen, which allows users to view all orders. The second screenshot shows the order details screen, which provides detailed information about a specific order. The third screenshot illustrates the order creation screen, where users can update or create orders.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Order/sprint3_fig.png}
+    \caption{Screenshots for Sprint 3}
+    \label{fig:screenshots_sprint3}
+\end{figure}
+
+\subsubsection{Summary}
+
+In this section, we discussed the design and implementation of the order management feature in the mobile app. We explored the database schema, class diagram, sequence diagram, and user journey for this feature. Additionally, we provided code snippets and screenshots to illustrate the implementation process.
+
+\section{Sprint 4: Mobile - Budget \& Costs Management}
+
+\subsection{Sprint Backlog}
+
+In this section, we present the Sprint Backlog, detailing the tasks planned for developing budget and costs management features. It is a concise list of user stories and specific actions that will guide us through the sprint.
+
+\setlength{\LTleft}{0pt}
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Sprint} & \textbf{User Story} & \textbf{Task} & \textbf{ID} \\
+\hline
+4 & 4.1 & Frontend: Create Screen to Enter Various Cost Parameters & 4.1.1 \\
+\hline
+4 & 4.2 & Frontend: Implement Calculation of Key Financial Metrics & 4.2.1 \\
+\hline
+4 & 4.3 & Frontend: Create Screen to View All Budgets & 4.3.1 \\
+\hline
+4 & 4.4 & Frontend: Implement Selection of Specific Budgets & 4.4.1 \\
+\hline
+4 & 4.5 & Frontend: Implement Editing of Budget Information & 4.5.1 \\
+\hline
+4 & 4.6 & Frontend: Display Total Balance, Revenue, and Expenses & 4.6.1 \\
+\hline
+\caption{Sprint 4 - Mobile Budget \& Costs Management}
+\label{tab:sprint4_backlog}
+\end{longtable}
+
+
+\subsection{Design \& Implementation}
+
+In this section, we will explore the design and implementation of the mobile budget and costs management feature. We will begin by examining the backend design and implementation, followed by an analysis of the frontend design.
+
+\subsubsection{Database Schema}
+
+The database schema for the budget and costs management feature is shown in Figure \ref{fig:db_schema_sprint4}. It consists of the following tables:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Budget/sprint4class.png}
+    \caption{Database Schema for Sprint 4}
+    \label{fig:db_schema_sprint4}
+\end{figure}
+
+The class diagram depicts relationships between four main classes: \texttt{Budget}, \texttt{Expense}, \texttt{Revenue}, and \texttt{Result}.
+
+\begin{itemize}
+    \item \textbf{Budget Class:} Represents a budget with attributes like balance, creation and update dates, description, a list of expenses and revenues, starting balance, store, and a unique identifier (\texttt{\_id}).
+    
+    \item \textbf{Expense Class} and \textbf{Revenue Class:} Both represent financial items linked to the budget, with attributes such as name, subcategories, and a unique identifier (\texttt{\_id}).
+
+    \item \textbf{Costs Class:} Captures various cost-related metrics like product cost, selling price, and delivery cost.
+
+    \item \textbf{Result Class:} Calculates financial results based on costs, including break-even lead cost, total profit, and cost per delivered lead. It has a method \texttt{calculateFromCosts()} that processes data from the \texttt{Costs} class.
+    
+    \item \textbf{Relationships:}
+    \begin{itemize}
+        \item \texttt{Budget} has one-to-many relationships with both \texttt{Expense} and \texttt{Revenue}, indicating that a budget can include multiple expenses and revenues.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Sequence Diagram}
+
+The sequence diagram in Figure \ref{fig:sequence_sprint4} illustrates the interactions between the frontend and backend components when exploring the budget and costs management feature.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Budget/sprint4sequence.png}
+    \caption{Sequence Diagram for Sprint 4}
+    \label{fig:sequence_sprint4}
+\end{figure}
+
+\subsubsection{User Journey}
+
+The user journey for the budget and costs management feature is as follows:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Budget/sprint4activity.png}
+    \caption{User Journey for Sprint 4}
+    \label{fig:activity_sprint4}
+\end{figure}
+
+\subsubsection{Screenshots}
+
+The screenshots in Figures \ref{fig:screenshots_figure1}, \ref{fig:screenshots_figure2}, and \ref{fig:screenshots_figure3} showcase the budget and costs management features in the mobile app.
+
+\begin{itemize}
+    \item \textbf{Figure 1:} The first figure includes three screenshots:
+    \begin{itemize}
+        \item The tools page where users can select either the budget management tool or the cost calculator tool.
+        \item Screenshots displaying the various costs that can be input.
+    \end{itemize}
+    
+    \item \textbf{Figure 2:} The second figure includes:
+    \begin{itemize}
+        \item The various outputs calculated from the costs.
+        \item The budget home page.
+        \item The popup showing various budgets to select from.
+    \end{itemize}
+    
+    \item \textbf{Figure 3:} The third figure includes:
+    \begin{itemize}
+        \item The popup where users can modify the selected budget.
+        \item The popup where users can add a category to the revenues tab.
+        \item The expenses tab.
+    \end{itemize}
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Budget/1.png}
+    \caption{Screenshots for Figure 1}
+    \label{fig:screenshots_figure1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Budget/2.png}
+    \caption{Screenshots for Figure 2}
+    \label{fig:screenshots_figure2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Budget/3.png}
+    \caption{Screenshots for Figure 3}
+    \label{fig:screenshots_figure3}
+\end{figure}
+
+
+\subsubsection{Summary}
+
+In this section, we discussed the design and implementation of the budget and costs management feature in the mobile app. We explored the database schema, class diagram, sequence diagram, and user journey for this feature. Additionally, we provided code snippets and screenshots to illustrate the implementation process.
+
+\section{Sprint 5: Mobile - Statistics Management}
+
+\subsection{Sprint Backlog}
+
+In this section, we present the Sprint Backlog, detailing the tasks planned for developing statistics management features. It is a concise list of user stories and specific actions that will guide us through the sprint.
+
+\setlength{\LTleft}{0pt}
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Sprint} & \textbf{User Story} & \textbf{Task} & \textbf{ID} \\
+\hline
+5 & 5.1 & Frontend: Create Screen to Display Different Types of Statistics & 5.1.1 \\
+\hline
+5 & 5.2 & Frontend: Implement Filtering Options for Statistical Data & 5.2.1 \\
+\hline
+\caption{Sprint 5 - Statistical Analysis}
+\label{tab:sprint5_backlog}
+\end{longtable}
+
+\subsection{Design \& Implementation}
+
+In this section, we will explore the design and implementation of the mobile statistics management feature. We will begin by examining the backend design and implementation, followed by an analysis of the frontend design.
+
+\subsubsection{Database Schema}
+
+The database schema for the statistics management feature is shown in Figure \ref{fig:db_schema_sprint5}. It consists of the following tables:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Stats/sprint5class.png}
+    \caption{Database Schema for Sprint 5}
+    \label{fig:db_schema_sprint5}
+\end{figure}
+
+The \texttt{Statistics} class is designed to capture various statistical data within an application. It includes the following attributes:
+
+\begin{itemize}
+    \item \textbf{\texttt{store} (String):} Represents the store for which the statistics are being collected.
+    \item \textbf{\texttt{date} (Date):} Captures the date for the statistical data, indicating when the statistics were recorded.
+    \item \textbf{\texttt{deliveryStats} (Object):} Contains statistical data related to deliveries, including metrics such as delivery times, success rates, etc.
+    \item \textbf{\texttt{adminStats} (Object):} Holds statistical data pertinent to administrative functions, such as user activity, system performance, and other admin-related metrics.
+    \item \textbf{\texttt{productStats} (Object):} Stores statistical data for products, including sales figures, product performance, and other relevant metrics.
+\end{itemize}
+
+\subsubsection{Sequence Diagram}
+
+The sequence diagram in Figure \ref{fig:sequence_sprint5} illustrates the interactions between the frontend and backend components when exploring the statistics management feature.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Stats/sprint5sequence.png}
+    \caption{Sequence Diagram for Sprint 5}
+    \label{fig:sequence_sprint5}
+\end{figure}
+
+\subsubsection{User Journey}
+
+The user journey for the statistics management feature is as follows:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Stats/sprint5journey.png}
+    \caption{User Journey for Sprint 5}
+    \label{fig:activity_sprint5}
+\end{figure}
+
+\subsubsection{Screenshots}
+
+The screenshots in Figure \ref{fig:screenshots_sprint5} showcase the statistics management feature in the mobile app. The first screenshot displays the delivery stats tab, which allows users to view delivery-related statistical data. The second screenshot shows the products stats tab, providing insights into product performance. The third screenshot presents the team stats tab, offering statistics related to team activities.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Stats/sprint5fig.png}
+    \caption{Screenshots for Sprint 5}
+    \label{fig:screenshots_sprint5}
+\end{figure}
+
+\subsubsection{Summary}
+
+In this section, we discussed the design and implementation of the statistics management feature in the mobile app. We explored the database schema, class diagram, sequence diagram, and user journey for this feature. Additionally, we provided code snippets and screenshots to illustrate the implementation process.
+
+\section{Sprint 6: Mobile - Notifications Center}
+
+\subsection{Sprint Backlog}
+
+In this section, we present the Sprint Backlog, detailing the tasks planned for developing the notifications center feature. It is a concise list of user stories and specific actions that will guide us through the sprint.
+
+\setlength{\LTleft}{0pt}
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Sprint} & \textbf{User Story} & \textbf{Task} & \textbf{ID} \\
+\hline
+6 & 6.1 & Frontend: Create Screen to Customise Notifications Sound & 6.1.1 \\
+\hline
+6 & 6.2 & Frontend: Implement Socket Integration & 6.2.1 \\
+\hline
+\caption{Sprint 6 - Notifications Center}
+\label{tab:sprint6_backlog}
+\end{longtable}
+
+\subsection{Design \& Implementation}
+
+In this section, we will explore the design and implementation of the notifications center feature, focusing on the integration of Socket.IO from the backend (Node.js with Express) to the frontend (React Native).
+
+\subsubsection{Socket.IO Integration}
+
+Socket.IO is a library that enables real-time, bidirectional, and event-based communication between the server and the client. It consists of two parts: a server-side library for Node.js and a client-side library for the browser or mobile applications.
+
+\begin{itemize}
+    \item \textbf{Backend (Node.js with Express):} The backend setup involves installing the Socket.IO library and configuring it to work with an Express server. The following code snippet demonstrates the setup:
+
+\begin{lstlisting}[language=Python, caption=Backend Socket.IO Setup, frame=single, framerule=0.5pt]
+const express = require('express');
+const http = require('http');
+const socketIo = require('socket.io');
+
+const app = express();
+const server = http.createServer(app);
+const io = socketIo(server);
+
+io.on('connection', (socket) => {
+    console.log('New client connected');
+    
+    socket.on('disconnect', () => {
+        console.log('Client disconnected');
+    });
+
+    socket.on('notification', (data) => {
+        io.emit('notification', data);
+    });
+});
+
+server.listen(4000, () => {
+    console.log('Listening on port 4000');
+});
+\end{lstlisting}
+
+    \item \textbf{Frontend (React Native):} The frontend setup involves installing the Socket.IO client library and configuring it to connect to the backend server. The following code snippet demonstrates the setup:
+
+\begin{lstlisting}[language=Python, caption=Frontend Socket.IO Setup, frame=single, framerule=0.5pt]
+import React, { useEffect } from 'react';
+import { View, Text } from 'react-native';
+import io from 'socket.io-client';
+
+const socket = io('http://localhost:4000');
+
+const NotificationsScreen = () => {
+    useEffect(() => {
+        socket.on('notification', (data) => {
+            console.log('Notification received:', data);
+        });
+
+        return () => {
+            socket.off('notification');
+        };
+    }, []);
+
+    return (
+        <View>
+            <Text>Notifications Center</Text>
+        </View>
+    );
+};
+
+export default NotificationsScreen;
+\end{lstlisting}
+\end{itemize}
+
+\subsubsection{User Journey}
+
+The user journey for the notifications center feature is as follows:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Notifs/sprinnt6journey.png}
+    \caption{User Journey for Sprint 6}
+    \label{fig:activity_sprint6}
+\end{figure}
+
+\subsubsection{Screenshots}
+
+The screenshots in Figure \ref{fig:screenshots_sprint6} showcase the notifications center feature in the mobile app. The first screenshot displays a live push notification, which allows users to see a created order. The second screenshot shows the customization options for notification sounds.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Notifs/sprint6fig.png}
+    \caption{Screenshots for Sprint 6}
+    \label{fig:screenshots_sprint6}
+\end{figure}
+
+\subsubsection{Summary}
+
+In this section, we discussed the design and implementation of the notifications center feature in the mobile app. We explored the integration of Socket.IO from the backend to the frontend, the user journey, and provided screenshots to illustrate the implementation process.
+
+\section{Conclusion}
+
+In this chapter, we discussed the four mobile-related sprints, focusing on order management, budget and costs management, statistics management, and the notifications center. We explored the design and implementation of each feature, including database schemas, class diagrams, sequence diagrams, user journeys, and screenshots. Additionally, we provided code snippets to illustrate the integration of Socket.IO for real-time communication between the server and the client. Overall, these sprints helped enhance the mobile app's functionality and user experience, providing users with valuable tools for managing orders, budgets, costs, statistics, and notifications.

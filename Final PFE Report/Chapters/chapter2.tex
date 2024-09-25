@@ -2,12 +2,13 @@
 \setcounter{minitocdepth}{1}
 \minitoc
 \newpage
+
 \section{Introduction}
 This section aims to define and categorize the essential requirements of the project, distinguishing between functional requirements, which describe specific behaviors and capabilities of the system, and non-functional requirements, which focus on performance, security, accessibility criteria, and other overall qualities.
 
 \section{Functional Requirements}
-The functional requirements of our solution include the features that it must incorporate to meet the project's requirements and objectives. 
-\newline
+\section{Functional Requirements}
+The functional requirements of our solution include the features that it must incorporate to meet the project's requirements and objectives. These requirements are essential for ensuring that the system performs the necessary tasks effectively.
 
 The system must offer \textbf{shop visitors} the possibility to:
 
@@ -72,6 +73,8 @@ The system must offer \textbf{shop owners} the possibility to:
     \end{itemize}
 \end{itemize}
 
+Having outlined the functional requirements, it is also crucial to consider the non-functional requirements that ensure the system's overall performance and quality.
+
 \section{Non-functional Requirements}
 The non-functional requirements of the system are as follows:
 \begin{itemize}
@@ -83,8 +86,10 @@ The non-functional requirements of the system are as follows:
 \end{itemize}
 
 \section{Analysis of Requirements}
+This section provides an in-depth analysis of the system's requirements, identifying the key actors and their interactions with the system.
+
 \subsection{Identification of System Actors}
-The system involves the following actors:
+The system involves the following actors, as detailed in Table \ref{tab:actors}:
 
 \begin{table}[H] % Force table to appear where it is in the text
 \centering
@@ -104,23 +109,12 @@ Superadmin & A special user who takes over temporarily to solve issues related t
 \end{table}
 
 \subsection{Global Use Case Diagram}
-The global use case diagram represents the interactions between the system and its actors. It provides an overview of the system's functionality and the actors involved.
-\begin{itemize}
-    \item \textbf{Actors:} Represents a role played by an external entity (human user, hardware device, or another system) that interacts directly with the system under study.
-    \item \textbf{Use Case:} Represents a set of action sequences performed by the system that produce an observable result of interest to a particular actor.
-    \item \textbf{Relations between actors:} The only relationship between actors is the generalization relationship. When a child actor inherits from a parent actor, it inherits all the associations of the parent.
-    \item \textbf{Relations between use cases:} We can distinguish two types of relationships between use cases:
-    \begin{itemize}
-        \item \textbf{Association:} Represents a relationship between two use cases. It is represented by a line connecting the two use cases.
-        \item \textbf{Include:} Represents a relationship between two use cases where one use case includes the functionality of another use case. It is represented by a dashed line with an arrow pointing to the included use case.
-    \end{itemize}
-\end{itemize}
-
+The global use case diagram represents the interactions between the system and its actors, as shown in Figure \ref{fig:use_case_diagram}.
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{Images/globalUseCase.png}
-    \caption{Global Use Case Diagram}
-    \label{fig:use_case_diagram}
+  \centering
+  \includegraphics[width=0.5\textwidth]{Images/globalUseCase.png}
+  \caption{Global Use Case Diagram}
+  \label{fig:use_case_diagram}
 \end{figure}
 
 \subsection{Refinement of Use Cases}
@@ -310,35 +304,38 @@ It will be necessary to refine the already developed use case diagram to obtain 
 \hline
 \end{longtable}
 
-\subsubsection{Use Case 6: Manage Notifications}
+\subsubsection{Use Case 6: Generate Financial Reports}
 \begin{longtable}{|p{0.2\linewidth}|p{0.75\linewidth}|}
 \hline
-\textbf{Title} & Manage Notifications \\
+\textbf{Title} & Generate Financial Reports \\
 \hline
-\textbf{Summary} & This use case describes the actions performed by a shop owner to view notifications and edit the notifications sound. \\
+\textbf{Summary} & This use case describes the actions performed by a shop owner to generate financial reports based on the inputted costs and revenues. \\
 \hline
 \textbf{Actors} & Shop Owner \\
 \hline
-\textbf{Preconditions} &
+\textbf{Preconditions} & 
 \begin{itemize}
     \item The shop owner has logged into the application.
-    \item The shop owner has accessed the notifications management section.
+    \item The shop owner has inputted all relevant costs and revenues.
+    \item The shop owner has accessed the financial reports section.
 \end{itemize} \\
 \hline
-\textbf{Postconditions} & The shop owner has viewed notifications and edited the notifications sound. \\
+\textbf{Postconditions} & The shop owner has generated and reviewed the financial reports. \\
 \hline
 \textbf{Nominal Scenario} &
 \begin{enumerate}
     \item The shop owner logs into the system.
-    \item The shop owner views notifications.
-    \item The shop owner edits the notifications sound.
+    \item The shop owner navigates to the financial reports section.
+    \item The shop owner selects the type of report to generate.
+    \item The shop owner generates the financial report.
+    \item The shop owner reviews the financial report.
     \item The shop owner logs out of the system.
 \end{enumerate} \\
 \hline
 \textbf{Alternative Scenarios} &
 \begin{itemize}
-    \item The shop owner does not find any notifications.
-    \item The shop owner encounters an error while editing the notifications sound.
+    \item The shop owner encounters an error while generating the financial report.
+    \item The shop owner finds discrepancies in the financial report and needs to re-input data.
 \end{itemize} \\
 \hline
 \end{longtable}
@@ -377,4 +374,4 @@ It will be necessary to refine the already developed use case diagram to obtain 
 \end{longtable}
 
 \section{Conclusion}
-This chapter has provided an analysis and specification of the requirements for the project. It has identified the functional and non-functional requirements of the system, as well as the actors involved in the system. The global use case diagram has been presented, along with the refinement of use cases to provide more detailed information about the system's features and constraints.
+This chapter has provided an analysis and specification of the requirements for the project. It has identified the functional and non-functional requirements of the system, as well as the actors involved in the system. The global use case diagram has been presented, along with the refinement of use cases to provide more detailed information about the system's features and constraints. By thoroughly understanding these requirements and use cases, we can ensure that the system will meet the needs of its users and provide a robust, efficient, and user-friendly solution.

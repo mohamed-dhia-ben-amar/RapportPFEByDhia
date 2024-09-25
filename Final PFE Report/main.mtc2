@@ -1,21 +1,16 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Host Company}{\reset@font\mtcSfont 5}{section.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.1}Converty}{\reset@font\mtcSSfont 5}{subsection.2.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.2}Services}{\reset@font\mtcSSfont 5}{subsection.2.1.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Study Of The Existing}{\reset@font\mtcSfont 6}{section.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Problem Statement}{\reset@font\mtcSfont 6}{section.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Proposed Solution}{\reset@font\mtcSfont 7}{section.2.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}About the Project}{\reset@font\mtcSfont 7}{section.2.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Goals}{\reset@font\mtcSSfont 7}{subsection.2.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Objectives}{\reset@font\mtcSSfont 7}{subsection.2.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.3}Deliverables}{\reset@font\mtcSSfont 8}{subsection.2.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.4}Management Plan}{\reset@font\mtcSSfont 8}{subsection.2.5.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Software Development Life Cycle (SDLC)}{\reset@font\mtcSSSfont 8}{subsection.2.5.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Comparison of SDLC Models}{\reset@font\mtcSSSfont 8}{figure.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Agile Methodology}{\reset@font\mtcSSSfont 9}{table.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Scrum Framework}{\reset@font\mtcSSSfont 9}{table.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Scrum Tools}{\reset@font\mtcSSSfont 9}{figure.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.5}Timeline}{\reset@font\mtcSSfont 10}{subsection.2.5.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Scrum Team}{\reset@font\mtcSSSfont 10}{subsection.2.5.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Product Backlog}{\reset@font\mtcSSSfont 10}{subsection.2.5.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Gantt Chart}{\reset@font\mtcSSSfont 12}{table.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Conclusion}{\reset@font\mtcSfont 12}{section.2.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Introduction}{\reset@font\mtcSfont 15}{section.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Functional Requirements}{\reset@font\mtcSfont 15}{section.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Functional Requirements}{\reset@font\mtcSfont 15}{section.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Non-functional Requirements}{\reset@font\mtcSfont 16}{section.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Analysis of Requirements}{\reset@font\mtcSfont 17}{section.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Identification of System Actors}{\reset@font\mtcSSfont 17}{subsection.2.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Global Use Case Diagram}{\reset@font\mtcSSfont 17}{subsection.2.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.3}Refinement of Use Cases}{\reset@font\mtcSSfont 18}{subsection.2.5.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 1: View Shop}{\reset@font\mtcSSSfont 18}{subsection.2.5.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 2: Manage Upsells}{\reset@font\mtcSSSfont 19}{Item.8}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 3: Manage Orders}{\reset@font\mtcSSSfont 20}{Item.15}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 4: Manage Budgets}{\reset@font\mtcSSSfont 21}{Item.22}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 5: Manage Costs}{\reset@font\mtcSSSfont 22}{Item.28}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 6: Generate Financial Reports}{\reset@font\mtcSSSfont 23}{Item.32}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 7: View Statistics}{\reset@font\mtcSSSfont 24}{Item.38}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Conclusion}{\reset@font\mtcSfont 25}{section.2.6}}

@@ -7,6 +7,7 @@
 This chapter provides an overview of the project architecture and the choice of technologies used in the development process. It aims to explain the rationale behind the selection of specific architectural patterns, frameworks, and tools. By understanding the project architecture and the technologies employed, readers will gain insights into the design principles and the technical foundations of the system. Additionally, this chapter highlights the importance of making informed decisions when it comes to selecting technologies that align with the project requirements and objectives.
 
 \section{Project Architecture - Modular Monolith}
+The project architecture of Converty follows a Modular Monolith approach, which combines the benefits of a monolithic architecture with modular design principles. This section provides an in-depth look at the backend and services, frontend web dashboard, frontend mobile app, and the database used in the project.
 
 \subsection{Backend \& Services}
 The backend of Converty, which follows a Modular Monolith architecture, is implemented using Node.js and Express.js. It encompasses the authentication system, simple CRUD operations, and the business logic. On the other hand, the microservices, developed in Go (Golang), handle specific tasks such as sending notifications, cron jobs, serverless functions, and other background tasks. This architectural approach ensures a flexible and scalable system capable of efficiently handling diverse workloads.
@@ -78,10 +79,9 @@ The benefits of using RabbitMQ for asynchronous communication between microservi
 \end{itemize}
 
 \subsection{Frontend - Web Dashboard}
+The frontend of Converty, which is a web dashboard, is implemented using React, Vite, and TypeScript. React is a popular JavaScript library for building user interfaces, while Vite is a modern build tool that provides a fast and efficient development experience. TypeScript is a statically typed superset of JavaScript that adds type checking and other features to the language. The combination of React, Vite, and TypeScript provides a powerful and flexible frontend development environment that is ideal for building modern web applications.
 
 \subsubsection{React + Vite + TypeScript}
-The frontend of Converty, which is a web dashboard, is implemented using React, Vite, and TypeScript. React is a popular JavaScript library for building user interfaces, while Vite is a modern build tool that provides fast and efficient development experience. TypeScript is a statically typed superset of JavaScript that adds type checking and other features to the language. The combination of React, Vite, and TypeScript provides a powerful and flexible frontend development environment that is ideal for building modern web applications.
-
 The four templates in Converty are also coded using React, Vite, and TypeScript. These templates provide the result online store that the shop owner configured. By using React, Vite, and TypeScript, the templates are able to leverage the benefits of these technologies, including component-based development, fast development and hot module replacement, and type safety. This ensures a consistent and efficient development process for creating and maintaining the shop owners' online shop.
 
 \begin{figure}[H]
@@ -104,7 +104,6 @@ The benefits of using React, Vite, and TypeScript for the frontend of Converty i
 \end{itemize}
 
 \subsubsection{Redux}
-
 Redux is a predictable state container for JavaScript applications that helps manage the state of the application in a consistent and predictable way. It provides a single source of truth for the state of the application and allows changes to the state to be made in a predictable and controlled manner. Redux is used in the frontend of Converty to manage the state of the application, including user authentication, data fetching, and UI state.
 
 \begin{figure}[H]
@@ -212,7 +211,6 @@ The benefits of using MongoDB for storing data in Converty include:
     \item \textbf{Performance:} MongoDB is known for its performance and efficiency, making it suitable for building fast and responsive web applications.
     \item \textbf{Ease of Use:} MongoDB is easy to use and provides a simple and intuitive API that makes it easy to interact with the database.
     \item \textbf{Community Support:} MongoDB has a large and active community that provides support, documentation, and a wide range of tools and libraries.
-    \item \textbf{Scalability:} MongoDB is designed to be scalable, making it suitable for building web applications that need to handle a large amount of data.
     \item \textbf{Compatibility:} MongoDB is compatible with a wide range of programming languages, frameworks, and tools, making it easy to integrate with other technologies.
 \end{itemize}
 

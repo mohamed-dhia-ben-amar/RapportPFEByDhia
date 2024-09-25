@@ -2,6 +2,7 @@
 \setcounter{minitocdepth}{1}
 \minitoc
 \newpage
+
 \section{Introduction}
 In this chapter, we will be discussing the two web-related sprints. We will provide a detailed explanation of the conception part, including a class diagram and a sequence diagram. Additionally, we will present the sprint backlog and include relevant screenshots of these sprints. Furthermore, we will showcase some code snippets to illustrate the implementation process.
 
@@ -50,7 +51,6 @@ The database schema for the shop visiting process is shown in Figure \ref{fig:db
     \label{fig:db_schema_sprint1}
 \end{figure}
 
-
 The class diagram illustrates the relationships between three main classes: \texttt{Store}, \texttt{Seller}, and \texttt{Logo}.
 
 \begin{itemize}
@@ -80,7 +80,7 @@ The sequence diagram in Figure \ref{fig:sequence_diagram_sprint1} illustrates th
 
 \subsubsection{User Journey}
 
-The user journey for the shop visiting process is as follows:
+The user journey for the shop visiting process is presented in Figure \ref{fig:user_journey_sprint1}.
 
 \begin{figure}[H]
     \centering
@@ -102,7 +102,7 @@ This activity diagram outlines the steps a shop visitor takes to buy a product:
 \subsubsection{Screenshots - UI Design}
 
 \begin{itemize}
-    \item \textbf{Shop Landing Page:} The shop landing page is the first page a user sees when visiting a shop. It contains a list of products, a search bar, and social media links. Figures \ref{fig:shop_landing_page_one} and \ref{fig:shop_landing_page_two} shows the shop landing page.
+    \item \textbf{Shop Landing Page:} The shop landing page is the first page a user sees when visiting a shop. It contains a list of products, a search bar, and social media links. Figures \ref{fig:shop_landing_page_one} and \ref{fig:shop_landing_page_two} show the shop landing page.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.8\textwidth]{images/landingPage1.png}
@@ -136,7 +136,7 @@ This activity diagram outlines the steps a shop visitor takes to buy a product:
         \caption{Extra Page}
         \label{fig:extra_page}
     \end{figure}
-    \item \textbf{Product Detail Page:} The product detail page displays information about a specific product alonng with a checkout form and other clients opinions about it. Figures \ref{fig:product_detail_page_one}, \ref{fig:product_detail_page_two} and \ref{fig:product_detail_page_three} shows the product detail page.
+    \item \textbf{Product Detail Page:} The product detail page displays information about a specific product along with a checkout form and other clients' opinions about it. Figures \ref{fig:product_detail_page_one}, \ref{fig:product_detail_page_two}, and \ref{fig:product_detail_page_three} show the product detail page.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.8\textwidth]{images/productDetailPage1.png}
@@ -173,6 +173,7 @@ This activity diagram outlines the steps a shop visitor takes to buy a product:
 \subsubsection{Summary}
 
 In this sprint, we successfully recreated the simple template for the shop visiting process. We designed and implemented the frontend components, sequence diagram, and user journey. We also created the various needed pages.
+
 
 \section{Sprint 2 - Implementing the Upsell/Cross-sell Feature}
 
@@ -332,7 +333,7 @@ if (data) {
 
 \subsubsection{User Journey}
 
-The user journey for the upsell/cross-sell creation feature is as follows:
+The user journey for the upsell/cross-sell feature is presented in Figure \ref{fig:user_journey_sprint2}.
 
 \begin{figure}[H]
     \centering
@@ -344,7 +345,7 @@ The user journey for the upsell/cross-sell creation feature is as follows:
 \subsubsection{Screenshots - UI Design}
 
 \begin{itemize}
-    \item \textbf{Table View Dashboard :} The table view dashboard displays a list of upsells/cross-sells in a tabular format. Figure \ref{fig:table_view_dashboard} shows the table view dashboard.
+    \item \textbf{Table View Dashboard:} The table view dashboard displays a list of upsells/cross-sells in a tabular format. Figure \ref{fig:table_view_dashboard} shows the table view dashboard.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.8\textwidth]{images/tableViewDashboard.png}
@@ -358,7 +359,7 @@ The user journey for the upsell/cross-sell creation feature is as follows:
         \caption{Upsell/Cross-sell Preview}
         \label{fig:upsell_preview}
     \end{figure}
-    \item \textbf{Edit/Add Upsell/Cross-sell:} The edit/add upsell/cross-sell page allows users to create or edit an upsell/cross-sell. Figures \ref{fig:edit_upsell_one} and \ref{fig:edit_upsell_two} shows the edit/add upsell/cross-sell page.
+    \item \textbf{Edit/Add Upsell/Cross-sell:} The edit/add upsell/cross-sell page allows users to create or edit an upsell/cross-sell. Figures \ref{fig:edit_upsell_one} and \ref{fig:edit_upsell_two} show the edit/add upsell/cross-sell page.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.8\textwidth]{images/editUpsell1.png}
@@ -375,8 +376,14 @@ The user journey for the upsell/cross-sell creation feature is as follows:
 
 \subsubsection{Summary}
 
-In this sprint, we successfully implemented the upsell/cross-sell feature. We designed and implemented the frontend and backend components, sequence diagrams, and user journey. We also created the various needed pages.
+In this sprint, we successfully implemented the upsell/cross-sell feature. We designed and implemented the frontend and backend components, sequence diagrams, and user journey. We also created the various needed pages, including the table view dashboard, upsell/cross-sell preview, and edit/add upsell/cross-sell pages. The implementation was validated through rigorous testing to ensure functionality and performance.
 
 \section{Conclusion}
 
 In this chapter, we discussed the two web-related sprints. We provided a detailed explanation of the conception part, including a class diagram and a sequence diagram. Additionally, we presented the sprint backlog and included relevant screenshots of these sprints. Furthermore, we showcased some code snippets to illustrate the implementation process.
+
+The first sprint focused on recreating the simple template, which involved designing and implementing a new template to enhance performance and user experience. The second sprint concentrated on implementing the upsell/cross-sell feature, which aimed to increase the average order value by recommending complementary products to customers.
+
+Both sprints were executed using the Agile methodology, ensuring iterative development and continuous feedback. The successful completion of these sprints has significantly improved the functionality and user experience of the Converty platform, making it more competitive in the e-commerce market.
+
+Future work will involve further enhancements and optimizations based on user feedback and evolving market trends. The next steps include expanding the feature set, improving scalability, and ensuring seamless integration with other systems and platforms.

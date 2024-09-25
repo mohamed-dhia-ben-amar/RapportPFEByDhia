@@ -1,17 +1,19 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Introduction}{\reset@font\mtcSfont 27}{section.4.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Project Architecture - Modular Monolith}{\reset@font\mtcSfont 27}{section.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Backend \& Services}{\reset@font\mtcSSfont 27}{subsection.4.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Node.js - Express.js}{\reset@font\mtcSSSfont 27}{subsection.4.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Go (Golang)}{\reset@font\mtcSSSfont 28}{figure.4.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode RabbitMQ}{\reset@font\mtcSSSfont 29}{figure.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Frontend - Web Dashboard}{\reset@font\mtcSSfont 30}{subsection.4.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode React + Vite + TypeScript}{\reset@font\mtcSSSfont 30}{subsection.4.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Redux}{\reset@font\mtcSSSfont 31}{figure.4.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}Frontend - Mobile App}{\reset@font\mtcSSfont 32}{subsection.4.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode React Native}{\reset@font\mtcSSSfont 32}{subsection.4.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Expo}{\reset@font\mtcSSSfont 33}{figure.4.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Zustand}{\reset@font\mtcSSSfont 34}{figure.4.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.4}Database - MongoDB}{\reset@font\mtcSSfont 35}{subsection.4.2.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Data Modeling - Mongoose}{\reset@font\mtcSSSfont 36}{figure.4.9}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Caching - Redis}{\reset@font\mtcSSSfont 37}{figure.4.9}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Conclusion}{\reset@font\mtcSfont 38}{section.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Introduction}{\reset@font\mtcSfont 40}{section.4.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Sprint 1 - Recreating the Simple Template}{\reset@font\mtcSfont 40}{section.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Sprint Backlog}{\reset@font\mtcSSfont 40}{subsection.4.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Design \& Implementation}{\reset@font\mtcSSfont 40}{subsection.4.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Database Schema}{\reset@font\mtcSSSfont 40}{subsection.4.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Sequence Diagram}{\reset@font\mtcSSSfont 41}{figure.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode User Journey}{\reset@font\mtcSSSfont 42}{figure.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Screenshots - UI Design}{\reset@font\mtcSSSfont 44}{figure.4.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Summary}{\reset@font\mtcSSSfont 48}{figure.4.13}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Sprint 2 - Implementing the Upsell/Cross-sell Feature}{\reset@font\mtcSfont 49}{section.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.1}Sprint Backlog}{\reset@font\mtcSSfont 49}{subsection.4.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.2}Design \& Implementation}{\reset@font\mtcSSfont 49}{subsection.4.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Database Schema}{\reset@font\mtcSSSfont 49}{subsection.4.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Sequence Diagram}{\reset@font\mtcSSSfont 50}{figure.4.14}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Caching Layer}{\reset@font\mtcSSSfont 55}{figure.4.20}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode User Journey}{\reset@font\mtcSSSfont 57}{lstnumber.4.1.14}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Screenshots - UI Design}{\reset@font\mtcSSSfont 58}{figure.4.22}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Summary}{\reset@font\mtcSSSfont 61}{figure.4.26}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Conclusion}{\reset@font\mtcSfont 61}{section.4.4}}

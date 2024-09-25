@@ -34,6 +34,10 @@
 % Ensure that the header and footer are applied to chapter pages
 \renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
 
+% Customizing the minitoc
+\renewcommand{\mtctitle}{Summary} % Change the title to "Summary"
+\mtcsetrules{*}{off} % Remove the top and bottom lines
+
 \titleformat{\chapter}[block]
   {\normalfont\Huge\bfseries\centering}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
   [\titlerule]
@@ -74,6 +78,7 @@
   \item[ODM] Object Data Modeling
   \item[CRUD] Create, Read, Update, Delete
 \end{abbrv}
+\newpage
 
 \pagenumbering{arabic}
 \input{Sections/generalIntroduction}

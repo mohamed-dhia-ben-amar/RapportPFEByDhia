@@ -2,33 +2,33 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Sprint 3: Mobile - Order Management}{\reset@font\mtcSfont 63}{section.5.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}Sprint Backlog}{\reset@font\mtcSSfont 63}{subsection.5.2.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}Design \& Implementation}{\reset@font\mtcSSfont 63}{subsection.5.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Database Schema}{\reset@font\mtcSSSfont 63}{subsection.5.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Sequence Diagram}{\reset@font\mtcSSSfont 65}{figure.5.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Zustand - Immer}{\reset@font\mtcSSSfont 66}{figure.5.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode User Journey}{\reset@font\mtcSSSfont 67}{lstnumber.5.1.14}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Screenshots}{\reset@font\mtcSSSfont 68}{figure.5.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Summary}{\reset@font\mtcSSSfont 69}{figure.5.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Sprint 4: Mobile - Budget \& Costs Management}{\reset@font\mtcSfont 69}{section.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}Sprint Backlog}{\reset@font\mtcSSfont 69}{subsection.5.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.2}Design \& Implementation}{\reset@font\mtcSSfont 70}{subsection.5.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Database Schema}{\reset@font\mtcSSSfont 70}{subsection.5.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Sequence Diagram}{\reset@font\mtcSSSfont 71}{figure.5.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode User Journey}{\reset@font\mtcSSSfont 73}{figure.5.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Screenshots}{\reset@font\mtcSSSfont 75}{figure.5.7}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Summary}{\reset@font\mtcSSSfont 76}{figure.5.10}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Sprint 5: Mobile - Statistics Management}{\reset@font\mtcSfont 77}{section.5.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Sprint Backlog}{\reset@font\mtcSSfont 77}{subsection.5.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.2}Design \& Implementation}{\reset@font\mtcSSfont 77}{subsection.5.4.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Database Schema}{\reset@font\mtcSSSfont 77}{subsection.5.4.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Sequence Diagram}{\reset@font\mtcSSSfont 78}{figure.5.11}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode User Journey}{\reset@font\mtcSSSfont 79}{figure.5.12}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Screenshots}{\reset@font\mtcSSSfont 80}{figure.5.13}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Summary}{\reset@font\mtcSSSfont 81}{figure.5.14}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Sprint 6: Mobile - Notifications Center}{\reset@font\mtcSfont 81}{section.5.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}Sprint Backlog}{\reset@font\mtcSSfont 81}{subsection.5.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.2}Design \& Implementation}{\reset@font\mtcSSfont 81}{subsection.5.5.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Socket.IO Integration}{\reset@font\mtcSSSfont 82}{subsection.5.5.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode User Journey}{\reset@font\mtcSSSfont 83}{lstnumber.5.3.25}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Screenshots}{\reset@font\mtcSSSfont 84}{figure.5.15}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Summary}{\reset@font\mtcSSSfont 85}{figure.5.16}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Conclusion}{\reset@font\mtcSfont 85}{section.5.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.2.2.1}Database Schema}{\reset@font\mtcSSSfont 63}{subsubsection.5.2.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.2.2.2}Sequence Diagram}{\reset@font\mtcSSSfont 65}{subsubsection.5.2.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.2.2.3}Zustand - Immer}{\reset@font\mtcSSSfont 66}{subsubsection.5.2.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.2.2.4}User Journey}{\reset@font\mtcSSSfont 67}{subsubsection.5.2.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.2.2.5}Screenshots}{\reset@font\mtcSSSfont 68}{subsubsection.5.2.2.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.2.2.6}Summary}{\reset@font\mtcSSSfont 68}{subsubsection.5.2.2.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Sprint 4: Mobile - Budget \& Costs Management}{\reset@font\mtcSfont 68}{section.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}Sprint Backlog}{\reset@font\mtcSSfont 68}{subsection.5.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.2}Design \& Implementation}{\reset@font\mtcSSfont 69}{subsection.5.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.1}Database Schema}{\reset@font\mtcSSSfont 69}{subsubsection.5.3.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.2}Sequence Diagram}{\reset@font\mtcSSSfont 70}{subsubsection.5.3.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.3}User Journey}{\reset@font\mtcSSSfont 72}{subsubsection.5.3.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.4}Screenshots}{\reset@font\mtcSSSfont 74}{subsubsection.5.3.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.5}Summary}{\reset@font\mtcSSSfont 75}{subsubsection.5.3.2.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Sprint 5: Mobile - Statistics Management}{\reset@font\mtcSfont 76}{section.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Sprint Backlog}{\reset@font\mtcSSfont 76}{subsection.5.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.2}Design \& Implementation}{\reset@font\mtcSSfont 76}{subsection.5.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.1}Database Schema}{\reset@font\mtcSSSfont 76}{subsubsection.5.4.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.2}Sequence Diagram}{\reset@font\mtcSSSfont 77}{subsubsection.5.4.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.3}User Journey}{\reset@font\mtcSSSfont 78}{subsubsection.5.4.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.4}Screenshots}{\reset@font\mtcSSSfont 79}{subsubsection.5.4.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.5}Summary}{\reset@font\mtcSSSfont 80}{subsubsection.5.4.2.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Sprint 6: Mobile - Notifications Center}{\reset@font\mtcSfont 80}{section.5.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}Sprint Backlog}{\reset@font\mtcSSfont 80}{subsection.5.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.2}Design \& Implementation}{\reset@font\mtcSSfont 80}{subsection.5.5.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.2.1}Socket.IO Integration}{\reset@font\mtcSSSfont 81}{subsubsection.5.5.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.2.2}User Journey}{\reset@font\mtcSSSfont 82}{subsubsection.5.5.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.2.3}Screenshots}{\reset@font\mtcSSSfont 83}{subsubsection.5.5.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.2.4}Summary}{\reset@font\mtcSSSfont 84}{subsubsection.5.5.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Conclusion}{\reset@font\mtcSfont 84}{section.5.6}}

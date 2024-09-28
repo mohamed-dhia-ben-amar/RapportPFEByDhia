@@ -1,17 +1,17 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Introduction}{\reset@font\mtcSfont 27}{section.3.1}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Project Architecture - Modular Monolith}{\reset@font\mtcSfont 27}{section.3.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Backend \& Services}{\reset@font\mtcSSfont 27}{subsection.3.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Node.js - Express.js}{\reset@font\mtcSSSfont 27}{subsection.3.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Go (Golang)}{\reset@font\mtcSSSfont 28}{figure.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode RabbitMQ}{\reset@font\mtcSSSfont 29}{figure.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Frontend - Web Dashboard}{\reset@font\mtcSSfont 30}{subsection.3.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode React + Vite + TypeScript}{\reset@font\mtcSSSfont 31}{subsection.3.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Redux}{\reset@font\mtcSSSfont 31}{figure.3.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Frontend - Mobile App}{\reset@font\mtcSSfont 32}{subsection.3.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode React Native}{\reset@font\mtcSSSfont 32}{subsection.3.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Expo}{\reset@font\mtcSSSfont 33}{figure.3.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Zustand}{\reset@font\mtcSSSfont 34}{figure.3.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.4}Database - MongoDB}{\reset@font\mtcSSfont 35}{subsection.3.2.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Data Modeling - Mongoose}{\reset@font\mtcSSSfont 36}{figure.3.9}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Caching - Redis}{\reset@font\mtcSSSfont 37}{figure.3.9}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.1.1}Node.js - Express.js}{\reset@font\mtcSSSfont 28}{subsubsection.3.2.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.1.2}Go (Golang)}{\reset@font\mtcSSSfont 29}{subsubsection.3.2.1.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.1.3}RabbitMQ}{\reset@font\mtcSSSfont 30}{subsubsection.3.2.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Frontend - Web Dashboard}{\reset@font\mtcSSfont 31}{subsection.3.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.1}React + Vite + TypeScript}{\reset@font\mtcSSSfont 31}{subsubsection.3.2.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.2}Redux}{\reset@font\mtcSSSfont 32}{subsubsection.3.2.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Frontend - Mobile App}{\reset@font\mtcSSfont 33}{subsection.3.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.3.1}React Native}{\reset@font\mtcSSSfont 33}{subsubsection.3.2.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.3.2}Expo}{\reset@font\mtcSSSfont 34}{subsubsection.3.2.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.3.3}Zustand}{\reset@font\mtcSSSfont 35}{subsubsection.3.2.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.4}Database - MongoDB}{\reset@font\mtcSSfont 36}{subsection.3.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.4.1}Data Modeling - Mongoose}{\reset@font\mtcSSSfont 37}{subsubsection.3.2.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.4.2}Caching - Redis}{\reset@font\mtcSSSfont 37}{subsubsection.3.2.4.2}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Conclusion}{\reset@font\mtcSfont 38}{section.3.3}}

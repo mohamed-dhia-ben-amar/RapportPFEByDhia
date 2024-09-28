@@ -8,12 +8,20 @@ This chapter provides an overview of the project architecture and the choice of 
 
 \section{Project Architecture - Modular Monolith}
 The project architecture of Converty follows a Modular Monolith approach, which combines the benefits of a monolithic architecture with modular design principles. This section provides an in-depth look at the backend and services, frontend web dashboard, frontend mobile app, and the database used in the project.
+The main architecture of Converty is shown in Figure \ref{fig:mainArchitecture}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/mainArchitecture.png}
+    \caption{Main Architecture}
+    \label{fig:mainArchitecture}
+\end{figure}
 
 \subsection{Backend \& Services}
 The backend of Converty, which follows a Modular Monolith architecture, is implemented using Node.js and Express.js. It encompasses the authentication system, simple CRUD operations, and the business logic. On the other hand, the microservices, developed in Go (Golang), handle specific tasks such as sending notifications, cron jobs, serverless functions, and other background tasks. This architectural approach ensures a flexible and scalable system capable of efficiently handling diverse workloads.
 
 \subsubsection{Node.js - Express.js}
-Node.js is a popular runtime environment that allows developers to run JavaScript code outside the browser. It is built on the V8 JavaScript engine and provides a non-blocking, event-driven architecture that is ideal for building scalable network applications. Express.js, a minimal and flexible Node.js web application framework, is used to build the backend of Converty. It simplifies the process of building APIs and web applications by providing a robust set of features and middleware. Express.js is known for its simplicity, performance, and extensibility, making it an excellent choice for building the backend of the application.
+Node.js is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools, and scripts \cite{nodejs}. It is built on the V8 JavaScript engine and provides a non-blocking, event-driven architecture that is ideal for building scalable network applications. Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications \cite{expressjs}. It simplifies the process of building APIs and web applications by providing a robust set of features and middleware. Express.js is known for its simplicity, performance, and extensibility, making it an excellent choice for building the backend of the application.
 
 \begin{figure}[H]
     \centering
@@ -35,7 +43,7 @@ The benefits of using Node.js and Express.js for the backend of Converty include
 \end{itemize}
 
 \subsubsection{Go (Golang)}
-Go (Golang) is a statically typed, compiled programming language designed for building simple, reliable, and efficient software. It is known for its performance, simplicity, and ease of use, making it an excellent choice for building microservices. Go is widely used in the industry for building high-performance applications, cloud services, and distributed systems. The microservices in Converty are developed in Go to handle specific tasks such as sending notifications, cron jobs, serverless functions, and other background tasks.
+Go, also known as Golang, is an open-source, compiled, and statically typed programming language designed by Google. It is built to be simple, high-performing, readable, and efficient \cite{golang}. Go is known for its performance, simplicity, and ease of use, making it an excellent choice for building microservices. It is widely used in the industry for building high-performance applications, cloud services, and distributed systems. The microservices in Converty are developed in Go to handle specific tasks such as sending notifications, cron jobs, serverless functions, and other background tasks.
 
 \begin{figure}[H]
     \centering
@@ -57,7 +65,7 @@ The benefits of using Go for building microservices in Converty include:
 \end{itemize}
 
 \subsubsection{RabbitMQ}
-RabbitMQ is a message broker that is used to implement asynchronous communication between microservices in Converty. It provides a reliable and scalable messaging system that allows microservices to communicate with each other in a decoupled and asynchronous manner. RabbitMQ supports multiple messaging protocols, including AMQP, MQTT, and STOMP, making it suitable for building distributed systems.
+RabbitMQ is a message-queueing software also known as a message broker or queue manager. Simply said, it is software where queues are defined, to which applications connect in order to transfer a message or messages \cite{rabbitmq}. RabbitMQ is used to implement asynchronous communication between microservices in Converty. It provides a reliable and scalable messaging system that allows microservices to communicate with each other in a decoupled and asynchronous manner. RabbitMQ supports multiple messaging protocols, including AMQP, MQTT, and STOMP, making it suitable for building distributed systems.
 
 \begin{figure}[H]
     \centering
@@ -82,7 +90,7 @@ The benefits of using RabbitMQ for asynchronous communication between microservi
 The frontend of Converty, which is a web dashboard, is implemented using React, Vite, and TypeScript. React is a popular JavaScript library for building user interfaces, while Vite is a modern build tool that provides a fast and efficient development experience. TypeScript is a statically typed superset of JavaScript that adds type checking and other features to the language. The combination of React, Vite, and TypeScript provides a powerful and flexible frontend development environment that is ideal for building modern web applications.
 
 \subsubsection{React + Vite + TypeScript}
-The four templates in Converty are also coded using React, Vite, and TypeScript. These templates provide the result online store that the shop owner configured. By using React, Vite, and TypeScript, the templates are able to leverage the benefits of these technologies, including component-based development, fast development and hot module replacement, and type safety. This ensures a consistent and efficient development process for creating and maintaining the shop owners' online shop.
+Vite is a modern, fast build tool that provides an excellent development experience for modern web projects. Combining Vite with TypeScript and React allows developers to harness the power of fast builds, hot module replacement, and a highly efficient development workflow \cite{vite}. The four templates in Converty are also coded using React, Vite, and TypeScript. These templates provide the result online store that the shop owner configured. By using React, Vite, and TypeScript, the templates are able to leverage the benefits of these technologies, including component-based development, fast development and hot module replacement, and type safety. This ensures a consistent and efficient development process for creating and maintaining the shop owners' online shop.
 
 \begin{figure}[H]
     \centering
@@ -128,7 +136,7 @@ The benefits of using Redux for state management in the frontend of Converty inc
 \subsection{Frontend - Mobile App}
 
 \subsubsection{React Native}
-The mobile app of Converty is implemented using React Native, a popular framework for building cross-platform mobile applications. React Native allows developers to build mobile apps using JavaScript and React, providing a fast and efficient development experience. By using React Native, Converty is able to build a mobile app that runs on both iOS and Android devices, reducing development time and cost.
+React Native is an open-source UI software framework created by Facebook Inc. (now Meta Platforms). It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows, and UWP by enabling developers to use the React framework along with native platform capabilities \cite{reactnative}. It is used to develop Android and iOS applications at Facebook, Microsoft, and Shopify. It is also being used to develop virtual reality applications at Oculus. The mobile app of Converty is implemented using React Native, a popular framework for building cross-platform mobile applications. React Native allows developers to build mobile apps using JavaScript and React, providing a fast and efficient development experience. By using React Native, Converty is able to build a mobile app that runs on both iOS and Android devices, reducing development time and cost.
 
 \begin{figure}[H]
     \centering
@@ -150,7 +158,7 @@ The benefits of using React Native for building the mobile app of Converty inclu
 \end{itemize}
 
 \subsubsection{Expo}
-Expo is a set of tools and services that help developers build React Native applications more easily. It provides a fast and efficient development environment, allowing developers to build, test, and deploy mobile apps quickly. Expo provides a wide range of features and APIs, including push notifications, camera access, and location services, making it easy to build feature-rich mobile apps.
+Expo is an open-source platform for making universal native apps that run on Android, iOS, and the web. It includes a universal runtime and libraries that let you build native apps by writing React and JavaScript \cite{expo}. Expo is a set of tools and services that help developers build React Native applications more easily. It provides a fast and efficient development environment, allowing developers to build, test, and deploy mobile apps quickly. Expo provides a wide range of features and APIs, including push notifications, camera access, and location services, making it easy to build feature-rich mobile apps.
 
 \begin{figure}[H]
     \centering
@@ -172,7 +180,7 @@ The benefits of using Expo for building the mobile app of Converty include:
 \end{itemize}
 
 \subsubsection{Zustand}
-Zustand is a simple and fast state management library for React applications. It provides a way to manage the state of the application in a simple and efficient way, reducing the complexity of managing state in React components. Zustand is used in the mobile app of Converty to manage the state of the application, including user authentication, data fetching, and UI state.
+Zustand is a small, fast, and scalable bearbones state management solution. Zustand has a comfy API based on hooks. It isn't boilerplatey or opinionated, but has enough convention to be explicit and flux-like \cite{zustand}. Zustand is a simple and fast state management library for React applications. It provides a way to manage the state of the application in a simple and efficient way, reducing the complexity of managing state in React components. Zustand is used in the mobile app of Converty to manage the state of the application, including user authentication, data fetching, and UI state.
 
 \begin{figure}[H]
     \centering
@@ -194,7 +202,7 @@ The benefits of using Zustand for state management in the mobile app of Converty
 \end{itemize}
 
 \subsection{Database - MongoDB}
-MongoDB is a popular NoSQL database that is used in Converty to store data such as user information, product information, and configuration data. MongoDB is a document-oriented database that provides a flexible and scalable data storage solution. It is known for its performance, scalability, and ease of use, making it an excellent choice for building modern web applications.
+MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need \cite{mongodb}. MongoDB is a popular NoSQL database that is used in Converty to store data such as user information, product information, and configuration data. MongoDB is a document-oriented database that provides a flexible and scalable data storage solution. It is known for its performance, scalability, and ease of use, making it an excellent choice for building modern web applications.
 
 \begin{figure}[H]
     \centering
@@ -215,7 +223,7 @@ The benefits of using MongoDB for storing data in Converty include:
 \end{itemize}
 
 \subsubsection{Data Modeling - Mongoose}
-Mongoose is an Object Data Modeling (ODM) library for MongoDB that provides a simple and efficient way to model data in MongoDB. It provides a schema-based solution for modeling data, allowing developers to define the structure of the data and enforce validation rules. Mongoose is used in Converty to model data in MongoDB, including user information, product information, and configuration data.
+Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB \cite{mongoose}. Mongoose provides a schema-based solution for modeling data, allowing developers to define the structure of the data and enforce validation rules. Mongoose is used in Converty to model data in MongoDB, including user information, product information, and configuration data.
 
 The benefits of using Mongoose for data modeling in Converty include:
 
@@ -230,7 +238,7 @@ The benefits of using Mongoose for data modeling in Converty include:
 \end{itemize}
 
 \subsubsection{Caching - Redis}
-Redis is an in-memory data store that is used in Converty for caching data such as user sessions, product information, and configuration data. Redis provides a fast and efficient way to store and retrieve data in memory, making it ideal for caching frequently accessed data. It is known for its performance, scalability, and reliability, making it an excellent choice for building modern web applications.
+Redis is the world’s fastest in-memory database. It provides cloud and on-prem solutions for caching, vector search, and NoSQL databases that seamlessly fit into any tech stack—making it simple for digital customers to build, scale, and deploy the fast apps our world runs on \cite{redis}. Redis is used in Converty for caching data such as user sessions, product information, and configuration data. Redis provides a fast and efficient way to store and retrieve data in memory, making it ideal for caching frequently accessed data. It is known for its performance, scalability, and reliability, making it an excellent choice for building modern web applications.
 
 \begin{figure}[H]
     \centering

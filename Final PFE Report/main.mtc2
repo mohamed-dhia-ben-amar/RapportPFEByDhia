@@ -1,16 +1,15 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Introduction}{\reset@font\mtcSfont 15}{section.2.1}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Functional Requirements}{\reset@font\mtcSfont 15}{section.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Functional Requirements}{\reset@font\mtcSfont 15}{section.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Non-functional Requirements}{\reset@font\mtcSfont 16}{section.2.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Analysis of Requirements}{\reset@font\mtcSfont 17}{section.2.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Identification of System Actors}{\reset@font\mtcSSfont 17}{subsection.2.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Global Use Case Diagram}{\reset@font\mtcSSfont 17}{subsection.2.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.3}Refinement of Use Cases}{\reset@font\mtcSSfont 18}{subsection.2.5.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 1: View Shop}{\reset@font\mtcSSSfont 18}{subsection.2.5.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 2: Manage Upsells}{\reset@font\mtcSSSfont 19}{Item.8}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 3: Manage Orders}{\reset@font\mtcSSSfont 20}{Item.15}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 4: Manage Budgets}{\reset@font\mtcSSSfont 21}{Item.22}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 5: Manage Costs}{\reset@font\mtcSSSfont 22}{Item.28}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 6: Generate Financial Reports}{\reset@font\mtcSSSfont 23}{Item.32}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Use Case 7: View Statistics}{\reset@font\mtcSSSfont 24}{Item.38}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Conclusion}{\reset@font\mtcSfont 25}{section.2.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Non-functional Requirements}{\reset@font\mtcSfont 16}{section.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Analysis of Requirements}{\reset@font\mtcSfont 17}{section.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Identification of System Actors}{\reset@font\mtcSSfont 17}{subsection.2.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Global Use Case Diagram}{\reset@font\mtcSSfont 17}{subsection.2.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}Refinement of Use Cases}{\reset@font\mtcSSfont 18}{subsection.2.4.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.3.1}Use Case 1: View Shop}{\reset@font\mtcSSSfont 18}{subsubsection.2.4.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.3.2}Use Case 2: Manage Upsells}{\reset@font\mtcSSSfont 19}{subsubsection.2.4.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.3.3}Use Case 3: Manage Orders}{\reset@font\mtcSSSfont 20}{subsubsection.2.4.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.3.4}Use Case 4: Manage Budgets}{\reset@font\mtcSSSfont 21}{subsubsection.2.4.3.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.3.5}Use Case 5: Manage Costs}{\reset@font\mtcSSSfont 22}{subsubsection.2.4.3.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.3.6}Use Case 6: Generate Financial Reports}{\reset@font\mtcSSSfont 23}{subsubsection.2.4.3.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.3.7}Use Case 7: View Statistics}{\reset@font\mtcSSSfont 24}{subsubsection.2.4.3.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Conclusion}{\reset@font\mtcSfont 25}{section.2.5}}

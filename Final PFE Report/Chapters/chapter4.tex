@@ -46,7 +46,7 @@ The database schema for the shop visiting process is shown in Figure \ref{fig:db
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/sprintOneClass.png}
+    \includegraphics[width=0.5\textwidth]{images/sprintOneClassUpdated.png}
     \caption{Database Schema for Sprint 1}
     \label{fig:db_schema_sprint1}
 \end{figure}
@@ -54,9 +54,9 @@ The database schema for the shop visiting process is shown in Figure \ref{fig:db
 The class diagram illustrates the relationships between three main classes: \texttt{Store}, \texttt{Seller}, and \texttt{Logo}.
 
 \begin{itemize}
-    \item \textbf{Store Class:} Represents a shop with attributes such as an ID (\texttt{\_id}), name, associated seller, domain, title, logo, SEO description, theme, language, and a thank-you message. The \texttt{Logo} is a composite object with different sizes (small, medium, large).
+    \item \textbf{Store Class:} Represents a shop with attributes such as an ID (\texttt{\_id}), name, associated seller, domain, title, logo, SEO description, theme, language, and a thank-you message. The \texttt{Logo} is a composite object with different sizes (small, medium, large). The class includes methods for creating, updating, and retrieving store information (\texttt{createStore}, \texttt{updateStore}, \texttt{getStoreInfo}).
     
-    \item \textbf{Seller Class:} Represents the seller associated with a store, containing attributes like email and a reference to the \texttt{Store}.
+    \item \textbf{Seller Class:} Represents the seller associated with a store, containing attributes like email and a reference to the \texttt{Store}. The class includes methods for logging in, signing up, and retrieving seller information (\texttt{login}, \texttt{signUp}, \texttt{getSellerInfo}).
     
     \item \textbf{Logo Class:} Contains attributes for the different sizes of logos (\texttt{sm}, \texttt{md}, \texttt{lg}).
     
@@ -64,6 +64,7 @@ The class diagram illustrates the relationships between three main classes: \tex
     \begin{itemize}
         \item Each \texttt{Store} is associated with a \texttt{Seller} through a one-to-one relationship.
         \item Conversely, each \texttt{Seller} is linked back to a \texttt{Store}, maintaining the one-to-one relationship.
+        \item Each \texttt{Store} is associated with a \texttt{Logo} through a one-to-one relationship.
     \end{itemize}
 \end{itemize}
 
@@ -218,7 +219,7 @@ The database schema for the upsell/cross-sell feature is shown in Figure \ref{fi
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/sprintTwoClass.png}
+    \includegraphics[width=0.6\textwidth]{images/sprintTwoClassUpdated.png}
     \caption{Database Schema for Sprint 2}
     \label{fig:db_schema_sprint2}
 \end{figure}

@@ -65,7 +65,7 @@ The benefits of using Go for building microservices in Converty include:
 \end{itemize}
 
 \subsubsection{RabbitMQ}
-RabbitMQ is a message-queueing software also known as a message broker or queue manager. Simply said, it is software where queues are defined, to which applications connect in order to transfer a message or messages \cite{rabbitmq}. RabbitMQ is used to implement asynchronous communication between microservices in Converty. It provides a reliable and scalable messaging system that allows microservices to communicate with each other in a decoupled and asynchronous manner. RabbitMQ supports multiple messaging protocols, including AMQP, MQTT, and STOMP, making it suitable for building distributed systems.
+RabbitMQ is a message-queueing software also known as a message broker or queue manager. Simply put, it is software where queues are defined, to which applications connect in order to transfer messages \cite{rabbitmq}. We utilized RabbitMQ to handle asynchronous tasks and background processing. It supports both message queuing and publish/subscribe messaging patterns, ensuring reliable message delivery, fault tolerance, and scalability. This makes RabbitMQ an excellent choice for decoupling system components and managing distributed systems. In our implementation, RabbitMQ orchestrates tasks, events, and notifications, ensuring efficient and dependable communication between various services.
 
 \begin{figure}[H]
     \centering
@@ -87,10 +87,9 @@ The benefits of using RabbitMQ for asynchronous communication between microservi
 \end{itemize}
 
 \subsection{Frontend - Web Dashboard}
-The frontend of Converty, which is a web dashboard, is implemented using React, Vite, and TypeScript. React is a popular JavaScript library for building user interfaces, while Vite is a modern build tool that provides a fast and efficient development experience. TypeScript is a statically typed superset of JavaScript that adds type checking and other features to the language. The combination of React, Vite, and TypeScript provides a powerful and flexible frontend development environment that is ideal for building modern web applications.
 
 \subsubsection{React + Vite + TypeScript}
-Vite is a modern, fast build tool that provides an excellent development experience for modern web projects. Combining Vite with TypeScript and React allows developers to harness the power of fast builds, hot module replacement, and a highly efficient development workflow \cite{vite}. The four templates in Converty are also coded using React, Vite, and TypeScript. These templates provide the result online store that the shop owner configured. By using React, Vite, and TypeScript, the templates are able to leverage the benefits of these technologies, including component-based development, fast development and hot module replacement, and type safety. This ensures a consistent and efficient development process for creating and maintaining the shop owners' online shop.
+Combining Vite with TypeScript and React allows developers to harness the power of fast builds, hot module replacement, and a highly efficient development workflow \cite{vite}. The three out of the four templates in Converty are also coded using React, Vite, and TypeScript. These templates provide the resulting online store that the shop owner configured. By using React, Vite, and TypeScript, the templates are able to leverage the benefits of these technologies, including component-based development, fast development, hot module replacement, and type safety. This ensures a consistent and efficient development process for creating and maintaining the shop owners' online shop.
 
 \begin{figure}[H]
     \centering
@@ -258,6 +257,12 @@ The benefits of using Redis for caching data in Converty include:
     \item \textbf{Performance:} Redis is known for its performance and efficiency, making it suitable for caching data in modern web applications.
     \item \textbf{Scalability:} Redis is designed to be scalable, making it suitable for caching large amounts of data in memory.
 \end{itemize}
+
+\section{Explaining The Main Architecture}
+After understanding the components that are present in the Figure \ref{fig:mainArchitecture} of the main architecture, it is crucial to have an understanding of how these components interact with each other.
+
+
+The system ensures efficient communication between components for order management and admin control. Delivery companies send requests to the Go-based Delivery Service, which updates order statuses in MongoDB. The Master database handles writes, while slaves handle reads, with Redis providing cached data for faster access. The React Admin Frontend communicates with the Node.js Admin Backend, which interacts with the database and manages image storage via S3, delivering content through a Google CDN for optimized performance. This structure supports scalability and real-time data processing.
 
 \section{Conclusion}
 

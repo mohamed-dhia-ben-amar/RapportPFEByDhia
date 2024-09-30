@@ -40,7 +40,7 @@ The database schema for the order management feature is shown in Figure \ref{fig
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/sprintThreeClass.png}
+    \includegraphics[width=0.8\textwidth]{images/sprintThreeClassUpdated.png}
     \caption{Database Schema for Sprint 3}
     \label{fig:db_schema_sprint3}
 \end{figure}
@@ -63,10 +63,11 @@ The class diagram illustrates the relationships between several key classes: \te
     \item \textbf{Relationships:}
     \begin{itemize}
         \item Each \texttt{Order} is associated with one \texttt{Customer}, represented by a one-to-one relationship.
-        \item Each \texttt{Order} can include multiple \texttt{CartItem} instances, representing a one-to-many relationship between \texttt{Order} and \texttt{CartItem}.
-        \item Each \texttt{Order} can have multiple \texttt{History} entries, representing a one-to-many relationship.
-        \item Each \texttt{Order} is associated with one \texttt{Total}, representing a one-to-one relationship.
+        \item Each \texttt{Order} is associated with one \texttt{Cart}, represented by a one-to-one relationship.
+        \item Each \texttt{Cart} can include multiple \texttt{CartItem} instances, representing a one-to-many relationship.
         \item Each \texttt{CartItem} is associated with one \texttt{Product}, representing a one-to-one relationship.
+        \item Each \texttt{Order} is associated with one \texttt{Total}, represented by a one-to-one relationship.
+        \item Each \texttt{Order} can have multiple \texttt{History} entries, representing a one-to-many relationship.
     \end{itemize}
 \end{itemize}
 
@@ -167,7 +168,7 @@ The database schema for the budget and costs management feature is shown in Figu
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/Budget/sprint4class.png}
+    \includegraphics[width=0.8\textwidth]{images/Budget/sprint4classupdated.png}
     \caption{Database Schema for Sprint 4}
     \label{fig:db_schema_sprint4}
 \end{figure}
@@ -186,6 +187,7 @@ The class diagram depicts relationships between four main classes: \texttt{Budge
     \item \textbf{Relationships:}
     \begin{itemize}
         \item \texttt{Budget} has one-to-many relationships with both \texttt{Expense} and \texttt{Revenue}, indicating that a budget can include multiple expenses and revenues.
+        \item \texttt{Costs} has a one-to-one relationship with \texttt{Result}, indicating that costs are used to calculate a single result.
     \end{itemize}
 \end{itemize}
 
@@ -291,7 +293,7 @@ The database schema for the statistics management feature is shown in Figure \re
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/Stats/sprint5class.png}
+    \includegraphics[width=0.8\textwidth]{images/Stats/sprint5classupdated.png}
     \caption{Database Schema for Sprint 5}
     \label{fig:db_schema_sprint5}
 \end{figure}
@@ -304,6 +306,7 @@ The \texttt{Statistics} class is designed to capture various statistical data wi
     \item \textbf{\texttt{deliveryStats} (Object):} Contains statistical data related to deliveries, including metrics such as delivery times, success rates, etc.
     \item \textbf{\texttt{adminStats} (Object):} Holds statistical data pertinent to administrative functions, such as user activity, system performance, and other admin-related metrics.
     \item \textbf{\texttt{productStats} (Object):} Stores statistical data for products, including sales figures, product performance, and other relevant metrics.
+    \item \textbf{\texttt{adStats} (Object):} Contains advertising statistics, including various metrics related to ad performance.
 \end{itemize}
 
 \subsubsection{Sequence Diagram}
